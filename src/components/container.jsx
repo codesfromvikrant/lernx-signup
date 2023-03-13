@@ -11,13 +11,10 @@ const Container = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
-      <div
-        style={style}
-        className=" w-1/2 md:block hidden h-[100vh] shadow-xl"
-      ></div>
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-0 max-w-6xl mx-auto shadow-xl">
+      <div style={style} className=" md:block hidden h-full shadow-xl"></div>
 
-      <div className="w-1/2 px-16">
+      <div className="py-20 lg:px-20 md:px-12 sm:px-20 px-10">
         <Outlet />
       </div>
     </div>
